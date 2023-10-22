@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADEX LEGENDS - REGISTRATION</title>
+    <link rel="icon" href="../assets/icon/navbar/Adex.png">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Registration.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html"><img src="../assets/icon/navbar/Adex.png" class="logoAdex"><img src="../assets/icon/navbar/AdexHover.png" class="logoAdex"></a>
+        <a href="Legends.html">Legends</a>
+        <a href="Maps.html">Maps</a>
+        <a href="AboutUs.html">About Us</a>
+        <a class="active">Registration</a>
+        <a href="index.html"><a class="right" href="index.html"><img src="../assets/icon/navbar/AdexL.png" class="logoAdexL"><img src="../assets/icon/navbar/AdexLhover.png" class="logoAdexL"></a></a>
+        <a class="right"><img src="../assets/icon/navbar/accActive.png" class="logoAcc"><img src="../assets/icon/navbar/accActive.png" class="logoAcc"></a>
+    </div>
+
+    <div><img src="../assets/icon/navbar/AdexL.png" class="adex"></div>
+    <div class="margin"></div>
+    <div class="new"><h3>Create Your New Account</h3></div>
+    <div class="mid-form">
+        <form method="POST" name="signup">
+            <p>Continent</p>
+            <select>
+                <option>Africa</option>
+                <option>America</option>
+                <option>Asia</option>
+                <option>Europe</option>
+            </select>
+
+            <p>Full Name</p>
+            <input type="text" name="fullname" id="fullname">
+            <div id="errorfullname" class="warn" ></div>
+
+            <p>Username</p>
+            <input type="text" name="username" id="username">
+            <div id="errorusername" class="warn"></div>
+
+            <p>Email</p>
+            <input type="text" name="email" id="email">
+            <div id="erroremail" class="warn"></div>
+
+            <p>Address</p>
+            <input type="text" name="address" id="address">
+            <div id="erroraddress" class="warn" ></div>
+
+            <p>Password</p>
+            <input type="password" name="password" id="password">
+            <div id="errorpassword" class="warn"></div>
+
+            <p>Confirm Password</p>
+            <input type="password" name="confirmpassword" id="confirmpassword">
+            <div id="errorconfirmpassword" class="warn"></div>
+            
+            <br>
+            <button type="button" onclick="validation()" class="reg">Register</button>
+        </form>
+    </div>
+    <script src="../js/Registration.js"></script>
+    <script src="../js/sosNav.js"></script>
+
+    <div class="foot">
+        <a class="more">More Info</a>
+        <div class="foot-menu">
+            <span class="foot-link"><img src= "../assets/icon/footer/Instagram.png" class="sosmed" onclick="openInstagram()"></span>
+            <span class="foot-link"><img src= "../assets/icon/footer/Facebook.png" class="sosmed" onclick="openFacebook()"></span>
+            <span class="foot-link"><img src= "../assets/icon/footer/Youtube.png" class="sosmed" onclick="openYoutube()"></span>
+            <span class="foot-link"><img src= "../assets/icon/footer/Twitter.png" class="sosmed" onclick="openTwitter()"></span>
+        </div>
+        <div class="line"></div>
+        <div class="foot-menu2">
+            <a href="index.html">Home</a>
+            <a href="Legends.html">Legends</a>
+            <a href="Maps.html">Maps</a>
+            <a href="AboutUs.html">About Us</a>
+            <a class="active">Registration</a>
+        </div>
+        <div class="foot-game">
+            <span><img src= "../assets/icon/footer/steam.png" class="logo-game" onclick="openSteam()"></span>
+            <span><img src= "../assets/icon/footer/ps.png" class="logo-game" onclick="openPS()"></span>
+            <span><img src= "../assets/icon/footer/xbox.png" class="logo-game" onclick="openXbox()"></span>
+            <span><img src= "../assets/icon/footer/nintendo.png" class="logo-game" onclick="openNintendo()"></span>
+        </div>
+        <a class="cpyright">© Calista Vannia Nathalie & Findy Febrianne</a>
+        <div><img src= "../assets/icon/footer/blood.png" class="blood"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,549 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'Chakra Petch';
+    background-color: rgba(56, 56, 56, 1);
+    position: absolute;
+}
+
+.nav {
+  overflow: hidden;
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(53, 53, 53, 1);
+}
+
+.nav a {
+  float: left;
+  display: block;
+  background: -webkit-linear-gradient(rgba(83, 82, 194, 1),
+    rgba(110, 100, 190, 1),
+    rgba(141, 121, 186, 1),
+    rgba(163, 136, 183, 1),
+    rgba(177, 146, 181, 1),
+    rgba(145, 124, 185, 1),
+    rgba(204, 164, 177, 1));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding: 1.26vw 1.4vw;
+  text-decoration: none;
+  font-size: 1.5vw;
+}
+
+.nav a:hover{
+    background: #ddd;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav a.active {
+  background: -webkit-linear-gradient(rgba(244, 12, 120, 1),
+  rgba(252, 106, 173, 1),
+  rgba(254, 143, 178, 1),
+  rgba(242, 161, 182, 1),
+  rgba(241, 182, 184, 1));
+  cursor: default;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav .icon {
+  display: none;
+}
+
+.nav .right{
+  float: right;
+}
+
+.logoAdex{
+    width: 1.8vw;
+    max-width: 100vw;
+}
+
+.logoAcc{
+  width: 2vw;
+  max-width: 100vw;
+}
+
+.logoAdexL{
+  width: 4.7vw;
+  max-width: 100vw;
+}
+
+a img:last-child {
+    display: none;  
+}
+
+a:hover img:last-child {
+    display: block;  
+}
+
+a:hover img:first-child {
+    display: none;  
+}
+
+@media screen and (max-width: 800px) {
+    
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+
+    a img:last-child {
+        display: none;  
+    }
+
+    a:hover img:last-child {
+        display: block;  
+    }
+
+    a:hover img:first-child {
+        display: none;  
+    }
+}
+
+@media screen and (max-width: 800px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.vid{
+    width: 100%;
+    height: auto;
+    max-width: 2400px;
+}
+
+.rect{
+    position: absolute;
+    width: 40vw;
+    height: 10vw;
+    left: 25vw;
+    top: 49.5vw;
+    background-color: #5D58C1;
+}
+
+.rect2{
+    position: absolute;
+    text-align: center;
+    padding-left: 6.5vw;
+    padding-right: 6.5vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    left: 5vw;
+    top: 5vw;
+    background: rgba(164, 137, 182, 0.9);
+    font-family: 'Chakra Petch';
+    font-size: 6.5vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+.column {
+    padding-right: 1vw;
+    top: 15vw;
+    float: left;
+    width: 80%;
+    margin-bottom: 6vw;
+    position: relative;
+    background-color: #515151;
+}
+
+.card {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pic{
+    width: 70vw;
+    height: 23.5vw;
+    float: left;
+    border-right: 0.7vw solid rgba(110, 100, 190, 1);
+}
+
+.title{
+    padding-top: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 2.5vw;
+}
+
+.fill{
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: #FFFFFF;
+    float: right;
+    text-align: justify;
+    font-size: 1.4vw;
+}
+
+.text{
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.meet{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    background: #5D58C1;
+    font-family: 'Chakra Petch';
+    text-decoration: none;
+    font-size: 1.4vw;
+    display: flex;
+    color: #FFFFFF;
+    justify-content: center;
+    border-radius: 1.5vw;
+    transition: transform .2s;
+    float: left;
+    margin-top: 5%;
+    margin-left: 2vw;
+}
+
+.meet:hover{
+    transform: scale(1.2);
+}
+
+.foot {
+    font-size: 100%;
+    width: 100%;
+    padding: 24vw 0vw;
+    background-color: rgba(53, 53, 53, 1);
+    background-color: 100%;
+    overflow: hidden;
+    opacity: 0.6;
+    position: relative;
+}
+  
+.foot a {
+    color: #C2C2C2;
+    padding: 1.26vw 1.4vw;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+.more{
+    top: 0vw;
+    position: absolute;
+    font-family: 'Chakra Petch';
+    font-size: 5vw;
+}
+
+.sosmed{
+    width: 1.8vw;
+    max-width: 100vw;
+}
+
+.foot-menu{
+    display: flex;
+    float: left;
+    margin-top: -19.5%;
+}
+
+.foot-link{
+    margin-left: 1.2vw;
+    margin-right: 1vw;
+    font-size: 1.5vw;
+    display: block;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.foot-link:hover{
+    transform: scale(1.3);
+}
+
+.line{
+    position: absolute;
+    background: #201f1f;
+    top: 14%;
+    width: 100%;
+    height: 0.2vw;
+}
+
+.foot-menu2{
+    margin-top: -15%;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+}
+
+.foot-menu2 a{
+    font-size: 1.5vw;
+    font-family: 'Chakra Petch', sans-serif;
+    background: #C2C2C2;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.foot-menu2 a:hover{
+    background: rgba(141, 121, 186, 1);;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.foot-menu2 a.active{
+    background: rgb(216, 127, 169);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.foot-game{
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    margin-top: -10%;
+}
+
+.logo-game{
+    padding: 1vw;
+    width: 7vw;
+    max-width: 7vw;
+    height: auto;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.logo-game:hover{
+    transform: scale(1.3);
+}
+
+.cpyright{
+    top: 35vw;
+    position: absolute;
+    font-style: normal;
+    font-family: 'Chakra Petch';
+    font-size: 1vw;
+    display: flex;
+    display: block;
+    align-items: center;
+    text-align: center;
+    color: #C2C2C2;
+    left: 33%;
+    top: 92%;
+}
+
+.blood{
+    width: 25vw;
+    max-width: 25vw;
+    height: auto;
+    margin-left: 70%;
+    margin-top: -4%;
+}
+
+@media (max-width:800px){
+    .foot-menu2{
+        flex-direction: column;
+        font-size: 50%;
+        margin-top: -15%;
+        align-items: flex-end;
+    }
+
+    .foot-game{
+        flex-direction: column;
+        margin-left: 90%;
+        margin-top: -14%;
+    }
+    
+    .foot-menu{
+        float: left;
+    }
+
+    .blood{
+        margin-left: 40%;
+        margin-top: -20%;
+    }
+
+    .cpyright{
+        margin-top: -3%;
+    }
+}
+  
+.column2 {
+    float: left;
+    width: 40%;
+    padding: 0 0.8vw;
+    position: relative;
+    margin-top: 20vw;
+    margin-left: 4vw;
+    margin-right: 5.5vw;
+}
+
+.column3 {
+    float: left;
+    width: 40%;
+    padding: 0 0.8vw;
+    position: relative;
+    margin-top: 5vw;
+    margin-left: -20vw;
+}
+
+.x{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    background: #515151;
+    color: #FFFFFF;
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 950px) {
+    .middle{
+        font-size: 75%;
+    }
+}
+  
+@media screen and (max-width: 800px) {
+    .middle{
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .middle{
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .middle{
+        font-size: 40%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .middle{
+        font-size: 25%;
+    }
+}
+
+.card2 {
+    padding-bottom: auto;
+    text-align: center;
+    display: block;
+    background-color: antiquewhite;
+}
+
+  .pic2{
+    width: 100%;
+    height: auto;
+  }
+
+  .left2{
+      color: #FFFFFF;
+      float: left;
+  }
+
+  .middle {
+    text-align: center;
+    top: 5vw;
+  }
+
+
+.col {
+    padding-right: 1vw;
+    top: 15vw;
+    float: right;
+    width: 80%;
+    margin-bottom: 6vw;
+    position: relative;
+    background-color: #515151;
+}
+
+.car {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pict{
+    width: 70vw;
+    height: 23.5vw;
+    float: left;
+    border-right: 0.7vw solid rgba(110, 100, 190, 1);
+}
+
+.titles{
+    padding-top: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 2.5vw;
+}
+
+.fills{
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: #FFFFFF;
+    float: right;
+    text-align: justify;
+    font-size: 1.4vw;
+}
+
+.texts{
+      align-items: center;
+      justify-content: center;
+      float: right;
+}
+
+.meets{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    background: #5D58C1;
+    font-family: 'Chakra Petch';
+    text-decoration: none;
+    font-size: 1.4vw;
+    display: flex;
+    color: #FFFFFF;
+    justify-content: center;
+    border-radius: 1.5vw;
+    transition: transform .2s;
+    float: left;
+    margin-top: 5%;
+    margin-left: 2vw;
+}
+
+.meets:hover{
+    transform: scale(1.2);
+} 
+
+@media screen and (max-width: 400px){
+    .card{
+        font-size: 1vw;
+    }
+    .car{
+        font-size: 1vw;
+    }
+}
